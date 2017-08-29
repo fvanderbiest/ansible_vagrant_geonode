@@ -1,4 +1,4 @@
 - name: deploy geonode
-  hosts: geonode
+  hosts: mygeonode
   roles:
     - geonode

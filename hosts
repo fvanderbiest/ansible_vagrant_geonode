@@ -1,7 +1,2 @@
-vagrant1 ansible_ssh_host=127.0.0.1 ansible_ssh_port=2222
-
-[vagrant]
-vagrant1
-
-[geonode]
-vagrant1
+mygeonode ansible_ssh_host=IP_OF_YOUR_MACHINE
+# To deploy to a remote node, put your IP above, leaving the "mygeonode" string as is
