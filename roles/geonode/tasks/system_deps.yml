@@ -2,7 +2,7 @@
   sudo: True
   apt: name=nginx update_cache=yes cache_valid_time=36000
 
-- name: install depdendecies
+- name: install dependencies
   sudo: True
   apt: pkg={{ item }}
   with_items:
