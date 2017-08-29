@@ -1,7 +1,7 @@
 #!/usr/bin/env ansible-playbook
 
 - name: get the geonode code
-  git: repo={{ geonode_repository }} dest={{ geonode_deploy_dir }} accept_hostkey=yes
+  git: repo={{ geonode_repository }} dest={{ geonode_deploy_dir }} accept_hostkey=yes version=2.6.x
 
 - name:  install GeoNode
   pip: extra_args="-e" name=file://{{ geonode_deploy_dir }} virtualenv={{virtualenv_path}}
